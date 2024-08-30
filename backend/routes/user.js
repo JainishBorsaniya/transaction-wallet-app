@@ -3,6 +3,7 @@ const { z } = require('zod')
 const { User, Account } = require('../db')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+const authMiddleware = require('../middleware')
 
 const router = express.Router()
 
